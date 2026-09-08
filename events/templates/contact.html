@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Event Management</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🎉 Event Management
+        </div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/events/">Events</a>
+            <a href="/about/">About</a>
+            <a href="/contact/">Contact</a>
+        </nav>
+
+        <div class="buttons">
+            <a href="/login/" class="login">Login</a>
+            <a href="/register/" class="register">Register</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<section class="contact-section">
+
+    <div class="contact-header">
+        <span class="tag">Contact Us</span>
+        <h1>Get In Touch</h1>
+        <p>
+            Have a question or need help?
+            We'd love to hear from you!
+        </p>
+    </div>
+
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>Contact Information</h2>
+
+            <p>📧 <strong>Email:</strong> eventmanagement@gmail.com</p>
+
+            <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+
+            <p>📍 <strong>Location:</strong> Chennai, Tamil Nadu</p>
+
+        </div>
+
+
+        <div class="contact-form">
+
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <input type="text"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       placeholder="Your Email"
+                       required>
+
+                <input type="text"
+                       placeholder="Subject"
+                       required>
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

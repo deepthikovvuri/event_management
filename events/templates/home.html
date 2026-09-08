@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+    <div class="logo">🎉 Event Management</div>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/events/">Events</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </nav>
+
+<div class="buttons">
+    <a href="/login/" class="login">Login</a>
+    <a href="/register/" class="register">Register</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+
+    <div class="left">
+
+        <span class="tag">Welcome!</span>
+
+        <h1>Event Management System</h1>
+
+        <p>
+            Easily create, manage and participate in exciting events.
+            Organize workshops, seminars, cultural fests and more with ease.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="/events/" class="btn1">View Events</a>
+
+            <a href="/event/" class="btn2">Create Event</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="upcoming">
+
+    <h2>Upcoming Events</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Web Development Workshop</h3>
+            <p>Learn HTML, CSS, Django and build real projects.</p>
+            <p><strong>📅 July 10, 2026</strong></p>
+            <button>Register Now</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤖</div>
+            <h3>AI Seminar</h3>
+            <p>Discover Artificial Intelligence and Machine Learning.</p>
+            <p><strong>📅 July 18, 2026</strong></p>
+            <button>Register Now</button>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎵</div>
+            <h3>Cultural Fest</h3>
+            <p>Dance, Music, Food and Fun Activities.</p>
+            <p><strong>📅 August 2, 2026</strong></p>
+            <button>Register Now</button>
+        </div>
+
+    </div>
+
+</section>
